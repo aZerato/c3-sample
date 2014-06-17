@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>c3 sample</title>
+
+	<link type="text/css" rel="stylesheet" href="scripts/lib/c3/c3.css">
+
+	<script type="text/javascript" src="scripts/lib/d3/d3.js"></script>
+	<script type="text/javascript" src="scripts/lib/c3/c3.js"></script>
+	<script type="text/javascript" src="scripts/lib/jquery/jquery.js"></script>
+
+
+	<script type="text/javascript" src="scripts/controller.js"></script>
+
+	<script type="text/javascript">
+	$(function () {
+		var controller = new Controller($('div#content'));
+		controller.init();
+	});
+	</script>
+</head>
+<body>
+	<div id="content">
+		<form>
+			<input type="text" placeholder="country"/>
+			<button type="submit">Submit</button>
+		</form>
+		<div id="chart"></div>
+	</div>
+</body>
+</html>
